@@ -1,0 +1,297 @@
+html{
+    background: black;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    
+    .anchor{
+      display: block; 
+      position: relative; 
+      height: 20px;
+      width: 20px;
+      visibility: hidden;
+      background: blue;
+    }
+    #anc1{
+      top: 600px;
+      background: blue;
+      
+    }
+    #anc2{
+      top: 1073px;
+      background: green;
+      
+    }
+    #anc3{
+      top: 2150px;
+      background: yellow;
+      
+    }
+    #anc4{
+      top: 2806px;
+      background: red;
+      
+    }
+    #main{
+      width:100%;
+      color: white;
+      background: black;
+      padding: 0px;
+      text-align: center;
+    }
+    #nav-center{
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    #navbar{
+      width: 50%;
+      height: auto;
+      background: white;
+      border-radius: 0px 0px 20px 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      visibility: hidden;
+      justify-content: space-between;
+      padding:10px 40px 10px 40px;
+    
+    
+    }
+    .nav-link{
+      color: black;
+      text-align: center;
+      font-size: 3.5vmin;
+    }
+    #bird{
+      font-size: 100px;
+      position: absolute;
+      top: 700px;
+      left: 0px; 
+      visibility: hidden;
+    }
+    #bird2{
+      visibility: hidden;
+      font-size: 100px;
+      position: absolute;
+      top: 700px;
+      right: 0px;
+    }
+    #bird3{
+      font-size: 100px;
+      position: absolute;
+      top: 0px;
+      align-text: center;
+      visibility: hidden;
+    }
+    
+    #union{
+      text-align: center;
+      position: absolute;
+      top: 700px;
+      width: 100%;
+      font-size: 100px;
+      visibility: hidden;
+    }
+    .zoom{
+      width: 100%;
+      text-align: center;
+      margin-top: 800px;
+      opacity: 1;
+      visibility: hidden;
+    }
+    .fadein{
+      animation: fadeIn 5s;
+    }
+    #zoom{
+      font-size: 30px;
+    }
+    
+    @keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+    }
+    #center2{
+      width: 100%;
+      background: ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #skills{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 250px;
+      width: 100%;
+      flex-direction: column;
+      font-size: 20px;
+      visibility: hidden;
+      background: white;
+      padding: 50px 0px 50px 0px;
+      
+      
+    }
+    .header{
+      color: black;
+    }
+    #skill{
+       color: black;
+      
+    }
+    .c{
+      
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: white;
+      display: inline-block;
+      border: 2px solid black;
+      background: black;
+      
+    }
+    .o{
+      
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 2px solid black;
+      background: white;
+      
+      
+    }
+    #tech-stack{
+      margin-top: 250px;
+      visibility: hidden;
+    }
+    #tech-grid{
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+    #tech-photo{
+      width: 50%;
+      height: 45%;
+    }
+    #allprojects{
+      visibility: hidden;
+    }
+    #projects-grid{
+      
+      width: 75%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 20px;
+      background: ;
+      
+    }
+    #project-tile{
+      
+      position: relative;
+    
+      
+    }
+    #screen{
+      
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+      background: black;
+      position: absolute;
+      top: 0px;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+     
+    }
+    #screen:hover{
+      animation: fadeIn2 0.5s;
+      opacity:0.83;
+    }
+    #plink:hover{
+      animation: bounce .75s;
+    }
+    
+    
+    .projectimage{
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+    }
+    @keyframes fadeIn2 {
+      0% {opacity:0;}
+      100% {opacity:0.83;}
+    }
+    
+    a{
+       text-decoration: none;
+       color: white;
+       font-size: 2.8vmax;
+    }
+    
+    @keyframes bounce {
+      0% {
+        font-size: 2.8vmax;
+        
+      }
+      50%{
+        font-size: 3vmax;
+      }
+      100% {
+        
+        font-size: 2.8vmax;
+        
+      }
+    }
+    .nav-link:hover{
+      animation: bounceless 0.5s;
+    }
+    @keyframes bounceless {
+      0% {
+        
+        font-size: 3.5vmin;
+        
+      }
+      50%{
+        font-size: 4vmin;
+      }
+      100% {
+        
+        font-size: 3.5vmin;
+        
+      }
+    }
+    
+    #endpoint{
+      width: 100%;
+      height: auto;
+      padding: 50px 0px 50px 0px;
+      background: white;
+      position: absolute;
+      left: 0;
+      margin-top:250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #logo{
+      height: 50px;
+      width: 50px;
+    }
+    p{
+      color: black;
+    }
